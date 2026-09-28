@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barmaan Vebs Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div>
+        <h1>Quiz</h1>
+        <p id="progressLabel">Progress: 0 / 20</p>
+    </div>
+
+    <div class="progress-container">
+        <div id="progressBar"></div>
+    </div>
+</header>
+
+<main>
+
+    <!-- EXAM LIST -->
+    <section id="examList">
+        <h2>Available Exams</h2>
+
+        <div id="exams">
+            <p>Loading...</p>
+        </div>
+    </section>
+
+
+    <!-- EXAM PAGE -->
+    <section id="examPage" class="hidden">
+
+        <button id="backButton" class="secondary-button">
+            ← Back
+        </button>
+
+        <h2 id="examTitle"></h2>
+
+        <!-- MEDIA -->
+        <div id="mediaBox" class="media-box hidden">
+
+            <img id="examImage"
+                 class="exam-image hidden"
+                 alt="Exam image">
+
+            <video id="examVideo"
+                   class="exam-video hidden"
+                   controls>
+            </video>
+
+            <audio id="examAudio"
+                   class="exam-audio hidden"
+                   controls>
+            </audio>
+
+        </div>
+
+        <!-- QUIZ INFO -->
+        <div class="quiz-info">
+            <span id="quizNumber">
+                Quiz 1 / 1
+            </span>
+
+            <span id="currentScore">
+                Score: 0 / 20
+            </span>
+        </div>
+
+        <!-- QUESTION -->
+        <div id="questionBox">
+
+            <h3 id="questionText"></h3>
+
+            <!-- OPTIONS -->
+            <div id="optionsBox"></div>
+
+            <!-- TEXTING -->
+            <input
+                id="textAnswer"
+                class="text-input hidden"
+                type="text"
+                autocomplete="off"
+                placeholder="Write your answer..."
+            >
+
+        </div>
+
+        <p id="answerResult"></p>
+
+        <button id="submitButton" class="primary-button">
+            Submit
+        </button>
+
+        <button id="continueButton"
+                class="primary-button"
+                disabled>
+            Continue
+        </button>
+
+    </section>
+
+</main>
+
+
+<!-- 20/20 MESSAGE -->
+
+<div id="breakOverlay" class="overlay hidden">
+
+    <div class="break-card">
+
+        <h2>
+            Dude ! Let's break for 15 minutes!
+        </h2>
+
+        <p>
+            You reached 20 / 20.
+        </p>
+
+        <button id="closeBreak"
+                class="primary-button">
+            OK
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
