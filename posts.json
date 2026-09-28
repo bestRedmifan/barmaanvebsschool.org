@@ -1,0 +1,62 @@
+[
+  {
+    "id": "science-001",
+    "type": "Exam",
+    "title": "Science Test",
+
+    "media": {
+      "image": "media/science.jpg",
+      "video": "media/science.mp4",
+      "audio": "media/science.mp3"
+    },
+
+    "quizzes": [
+
+      {
+        "type": "Options",
+        "question": "Which planet is known as the Red Planet?",
+        "options": [
+          "Earth",
+          "Mars",
+          "Venus"
+        ],
+        "correctAnswer": "Mars"
+      },
+
+      {
+        "type": "Texting",
+        "question": "What is 5 + 5?",
+        "correctAnswer": "10"
+      },
+
+      {
+        "type": "Options",
+        "question": "How many legs does a spider have?",
+        "options": [
+          "6",
+          "8",
+          "10"
+        ],
+        "correctAnswer": "8"
+      },
+
+      {
+        "type": "Texting",
+        "question": "Type the word: Barmaan",
+        "correctAnswer": "Barmaan"
+      },
+
+      {
+        "type": "Options",
+        "question": "Which one is a programming language?",
+        "options": [
+          "HTML",
+          "Kotlin",
+          "JPEG"
+        ],
+        "correctAnswer": "Kotlin"
+      }
+
+    ]
+  }
+]
